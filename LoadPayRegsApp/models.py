@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here:
 class DocFile(models.Model):
-    docfile = models.FileField(upload_to='docs/', verbose_name="Загрузка файла", null=True, blank=True)
+    docfile = models.FileField(verbose_name="Загрузка файла", null=True, blank=True)
     
     class Meta:
         verbose_name = "Загрузка файла"
